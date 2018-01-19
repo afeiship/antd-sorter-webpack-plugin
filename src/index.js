@@ -7,9 +7,6 @@ export default class {
   }
 
   apply(compiler){
-    const { path } = this.options;
-    const statisString = fs.readFileSync( path , CHARSET);
-
     compiler.plugin('compilation',(compilation)=>{
       compilation.plugin('html-webpack-plugin-before-html-processing', (htmlPluginData, callback)=>{
         htmlPluginData.assets.js.pop();

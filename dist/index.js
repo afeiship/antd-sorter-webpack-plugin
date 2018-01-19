@@ -25,10 +25,6 @@ var _default = function () {
   _createClass(_default, [{
     key: 'apply',
     value: function apply(compiler) {
-      var path = this.options.path;
-
-      var statisString = _fs2.default.readFileSync(path, CHARSET);
-
       compiler.plugin('compilation', function (compilation) {
         compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
           htmlPluginData.assets.js.pop();

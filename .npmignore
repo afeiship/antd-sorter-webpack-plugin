@@ -1,8 +1,9 @@
-build
 src
 config
 static
 .babelrc
+.editorconfig
+.npmrc
 .gitignore
 yarn.lock
-test
+__tests__
